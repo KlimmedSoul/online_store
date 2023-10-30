@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between
+}
+
+.icons_and_search {
+    width: 30vw;
+    display: flex;
+    margin-top: 4vh;
+    margin-right: 6vw;
+    justify-content: space-around
+}
+
+.searc_input {
+    border: 0px;
+    border-bottom: 1px solid #7D7D7D;;
+    width: 20vw;
+}
+
+.searc_input:focus {
+    outline: 0;
+}
+
+.search {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.menu {
+    margin-top: 4vh;
+    margin-left: 6vw;
+}
+
+.menu_icon {
+    width: 7vw;
+    height: 7vh;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    justify-content: space-evenly
+}
+
+.icon {
+    cursor: pointer;
+}

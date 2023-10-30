@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,300;1,900&display=swap');
+@font-face {
+    font-family: Roboto;
+    src: url();
+}
+
+.welcome {
+    margin-top: 5vh;
+    display: flex;
+}
+
+/* Левая часть */
+
+.left_part {
+    padding-left: 7.7vw;
+
+}
+
+.left_img {
+    width: 35vh;
+    height: 30vh;
+}
+
+.welcome_title{
+    margin-top: 5vh;
+    color: #121212;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}
+
+.cocteil { 
+    color: #514A7E;
+    font-family: Bad Script;
+     font-size: 60px; 
+     font-style: normal; 
+     font-weight: 400; 
+     line-height: 116.406%; 
+}
+
+.text_container {
+    margin-top: 6vh;
+}
+
+.welcome_text {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+/* Правая часть */
+
+.right_img {
+    width: 28vw;
+    height: 50vh;
+    margin-left: 30vw;
+}
