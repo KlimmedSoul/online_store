@@ -11,3 +11,40 @@
     width: 500px;
     height: 500px;
 }
+
+.first_circle, .second_circle, .third_circle, .fourth_circle {
+    border: 1px solid #514A7E;
+    border-radius: 100%;
+    background-color: #514A7E;
+    position: absolute;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.first_circle {
+    width: 35px;
+    height: 35px;
+    top: 115.2%;
+    left: 14%;
+}
+
+.second_circle {
+    width: 50px;
+    height: 50px;
+    top: 109%;
+    left: 64%;
+}
+
+
+.third_circle {
+    width: 60px;
+    height: 60px;
+    top: 135%;
+    left: 28%;
+}
+
+.fourth_circle {
+    width: 30px;
+    height: 30px;
+    top: 132%;
+    left: 76%;
+} 

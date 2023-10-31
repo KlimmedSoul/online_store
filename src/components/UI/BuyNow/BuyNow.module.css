@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@300;400&display=swap');
+
+.discount_title {
+    margin-left: 260px;
+    color: #514A7E;
+    font-family: Bad Script;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87.305%;
+}
+
+.title {
+    margin-left: 60px;
+    margin-bottom: 40px;
+    color: #121212;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}
+
+.prod_handler {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.prod_card {
+    width: 300px;
+
+}
+
+.icon_handler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.prices {
+    display: flex;
+    margin-left: 20px;
+}
+
+.new_price {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 50px;
+}
+
+.old_price {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: line-through;
+}
+
+.icon_img {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.prod_name_handler {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between
+}
+
+.prod_name {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+
+.footer_card {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.button_handler {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 0px 0px 6px gray;
+}
+
+.button_title {
+    padding: 10px;
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button_handler:hover {
+    background: #514A7E;
+    ;
+
+    .button_title {
+        color: #FFFDF5;
+    }
+
+    .arrow {
+        stroke: #FFFDF5;
+        ;
+    }
+}
+
+.arrow {
+    margin-left: 10px;
+    stroke: #514A7E;
+
+}
+
+.stars {
+    width: 20%;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+}

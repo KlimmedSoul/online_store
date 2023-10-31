@@ -1,0 +1,14 @@
+.svg {
+    background-color: #514A7E;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1280px;
+    right: 240px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px gray;
+}
