@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import cl from './ModalLogin.module.css';
 import Cart from '@mui/icons-material/ShoppingBag';
 import Favorite from '@mui/icons-material/Favorite';
 import Viewed from '@mui/icons-material/Visibility';
 
-const ModalLogin: React.FC = () => {
+interface styles {
+    active: string;
+}
+
+const ModalLogin: React.FC<styles> = ({active}) => {
+
 
     const icons = [
         {id: 1, component: Cart, text: "Корзина", class:cl.cart},
@@ -14,7 +19,7 @@ const ModalLogin: React.FC = () => {
 
 
     return (
-        <div className={cl.modal_login}>
+        <div className={cl.modal_login} style={{display: active}}>
             <div className={cl.header_modal}>
                 <div className={cl.user_icon}/>
                 <button className={cl.login_button}>Войти</button>

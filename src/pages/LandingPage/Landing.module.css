@@ -3,14 +3,6 @@
     height: 100%;
 }
 
-.elipse {
-    position: absolute;
-    right: -15%;
-    border-radius: 100%;
-    border: 1px solid #514A7E;
-    width: 500px;
-    height: 500px;
-}
 
 .first_circle, .second_circle, .third_circle, .fourth_circle {
     border: 1px solid #514A7E;

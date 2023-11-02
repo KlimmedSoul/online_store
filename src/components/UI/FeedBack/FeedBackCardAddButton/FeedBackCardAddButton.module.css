@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.button_handler {
+    cursor: pointer;
+    margin-top: 3%;
+    border: 0.5px solid #514A7E;
+    background: #514A7E;
+    width: 10%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: #FFFDF5;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button_handler:hover {
+    background-color: #FFFDF5;
+    box-shadow: 0px 0px 10px gray;
+    .title {
+        color:#514A7E;
+    }
+}

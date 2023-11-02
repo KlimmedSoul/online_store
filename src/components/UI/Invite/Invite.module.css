@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+.root {
+    width: 60%;
+    height: 550px;
+    background: #514A7E;
+    box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invite_window {
+    background-color: #FFFDF5;
+    width: 80%;
+    height: 450px;
+}
+
+.title_handler {
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.title {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+}
+
+.form_handler {
+    margin-top: 2%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox_handler {
+    display: flex;
+    margin-top: 1%;
+}
+
+.invite_input_checkbox {
+    margin-right: 2%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.invite_input_checkbox:checked {
+    background-color: gray;
+}
+
+.checkbox_text {
+    color: #7D7D7D;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 118%;
+}
+
+.button_handler {
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.send_button {
+    background-color: #514A7E;
+    border: 0.5px solid #514A7E;
+    box-shadow: 0px 0px 10px gray;
+    width: 18%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.send_button:hover {
+    background-color: #FFFDF5;
+
+    .arrow {
+        stroke: #514A7E;
+    }
+
+    .button_title {
+        color: #514A7E;
+    }
+}
+
+.button_title {
+    margin-right: 5%;
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+}
+
+.invite_input {
+    margin-top: 2%;
+    width: 30%;
+    height: 30px;
+    padding-left: 1%;
+    background-color: #FFFDF5;
+    border: 0px;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+}
+
+.invite_input::placeholder {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 118%;
+}

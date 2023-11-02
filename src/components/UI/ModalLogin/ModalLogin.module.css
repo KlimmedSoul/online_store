@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,300;1,900&display=swap');
 
 .modal_login {
+    margin-top: 8%;
     position: absolute;
     right: 7%;
     background-color: white;
@@ -8,6 +9,7 @@
     flex-direction: column;
     width: 300px;
     height: 300px;
+    box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
 }
 
 .header_modal {
@@ -45,6 +47,7 @@
 .icon_holder {
     display: flex;
     padding-left: 30px;
+    cursor: pointer;
 }
 
 .icon {

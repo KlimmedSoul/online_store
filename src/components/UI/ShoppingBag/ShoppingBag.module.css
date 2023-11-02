@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.root {
+    margin-top: 3%;
+    margin-left: 8%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.all_count {
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #121212;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}
+
+.prod_ico {
+    width: 200px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.prod_card {
+    display: flex;
+    margin-top: 3%;
+}
+
+.info_title_handler {
+    display: flex;
+    align-items: center;
+}
+
+.info_handler {
+    margin-left: 3%;
+    width: 30%;
+}
+
+.color_size_handler {
+    margin-top: 3%;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.color_size_text {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.plus_and_minus {
+    display: flex;
+    align-items: center;
+    margin-top: 6%;
+    width: 13%;
+    justify-content: space-between;
+}
+
+.plus, .minus {
+    cursor: pointer;
+}
+
+.prod_count {
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+}
+
+.favorite_and_remove {
+    margin-top: 6%;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.far_handler {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_btns {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.prod_name {
+    margin-right: 2%;
+    color: #121212;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+}
+
+.art {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.cost_handler {
+    width: 15%;
+}
+
+.cost_title {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2%;
+}
+
+.cost {
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    margin-bottom: 30%;
+}
+
+.delivery_info {
+    cursor: pointer;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.delivery_info_title {
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.arrow_info {
+    stroke-width: 1px;
+    stroke: #514A7E;
+}
+
+.total_handler {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 19%;
+}
+
+.total_title {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+}
+
+.total {
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+}
+
+.all_prod_count {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.order_handler {
+    margin-top: 2%;
+}
+
+.button {
+    margin-top: 2%;
+    width: 8%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #514A7E;
+    box-shadow: 0px 0px 6px gray;
+    cursor: pointer;
+}
+
+.button_title {
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button:hover {
+    background-color: #FFFDF5;
+    border: 0.5px solid #514A7E;
+
+    .button_title {
+        color: #514A7E;
+    }
+}
+
+.checkbox_handler {
+    margin-top: 1.2%;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.products_handler {
+    min-height: 550px;
+    max-height: 800px;
+    width: 100%;
+}
+
+.checkbox {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: gray;
+}
+
+.checkbox_text {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}

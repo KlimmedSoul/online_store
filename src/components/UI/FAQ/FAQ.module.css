@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.root {
+    margin-top: 8%;
+    padding-left: 8%;
+}
+
+.title_handler {
+    margin-bottom: 5%;
+}
+
+.title {
+    color: #121212;
+
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}
+
+.FAQ {
+    margin-left: 30%;
+    color: #514A7E;
+    font-family: Bad Script;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87.305%;
+}
+
+.text_and_plus {
+    margin-bottom: 1%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hr {
+    width: 85%;
+    margin-bottom: 2%;
+}
+
+.title_quest {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.plus_icon {
+    cursor: pointer;
+}
+
+.text {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+}

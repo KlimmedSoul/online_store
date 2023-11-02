@@ -1,0 +1,10 @@
+.elipse {
+    position: absolute;
+    right: -9%;
+    margin-top: 13.5%;
+    border-radius: 100%;
+    border: 1px solid #514A7E;
+    width: 350px;
+    height: 350px;
+    background-color: #514A7E;
+}

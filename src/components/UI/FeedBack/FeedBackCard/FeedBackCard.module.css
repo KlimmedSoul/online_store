@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.cards_handler {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+}
+
+.card {
+    background: #FFFDF5;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    width: 600px;
+    display: flex;
+    height: 220px;
+}
+
+.img_handler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback_info {
+    margin-left: 30px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars_and_text {
+    height: 100px;
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.text_handler {
+    margin-top: 10px;
+}
+
+.text {
+    color: #7D7D7D;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170%;
+}
+
+.name_and_date {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    color: #121212;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.date {
+    color: #514A7E;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.scroll_button {
+    cursor: pointer;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    border: 0.5px solid #514A7E;
+}
+
+.arrow {
+    width: 50px;
+    height: 10px;
+    stroke: #514A7E;
+}
+
+.scroll_button:hover {
+    background-color: #514A7E;
+    box-shadow: 0px 0px 10px gray;
+    .arrow {
+        stroke: white;
+    }
+}
