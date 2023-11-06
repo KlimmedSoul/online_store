@@ -2,10 +2,14 @@ import React from 'react';
 import cl from './Login.module.css'
 import ExitButton from '../ExitButton/ExitButton';
 
-const Login: React.FC = () => {
+interface styles {
+    active: string;
+}
+
+const Login: React.FC<styles> = ({active}) => {
 
     return (
-        <div className={cl.root}>
+        <div className={cl.root} style={{display: active}}>
             <div className={cl.header_handler}>
                 <div className={cl.title_handler}>
                     <h1 className={cl.title}>Вход в личный кабинет</h1>
@@ -22,10 +26,10 @@ const Login: React.FC = () => {
                 <p className={cl.forget}>Не помню пароль</p>
                 <div className={cl.buttons_handler}>
                     <div className={cl.btn_login}>
-                        <p>Войти в кабинет</p>
+                        <p className={cl.btn_login_title}>Войти в кабинет</p>
                     </div>
                     <div className={cl.btn_registration}>
-                        <p>Регистрация</p>
+                        <p className={cl.btn_registration_title}>Регистрация</p>
                     </div>
                 </div>
             

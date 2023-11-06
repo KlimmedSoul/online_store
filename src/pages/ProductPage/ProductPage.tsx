@@ -7,7 +7,7 @@ const Product: React.FC = () => {
 
     return (
         <Slide heightValue='100vh'>
-            <Header />
+            <Header/>
         </Slide>
     )
 }
