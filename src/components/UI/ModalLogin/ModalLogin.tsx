@@ -4,6 +4,7 @@ import Cart from '@mui/icons-material/ShoppingBag';
 import Favorite from '@mui/icons-material/Favorite';
 import Viewed from '@mui/icons-material/Visibility';
 import Login from "../Login/Login";
+import Registration from "../Registration/Registration";
 
 interface styles {
     active: string;
@@ -12,7 +13,7 @@ interface styles {
 const ModalLogin: React.FC<styles> = ({active}) => {
 
     const [activeModal, setActiveModal] = useState<string>('none')
-
+    const [activeRegistration, setActiveRegistration] = useState<string>('none')
     const icons = [
         {id: 1, component: Cart, text: "Корзина", class:cl.cart},
         {id: 2, component: Favorite, text: "Избранное", class:cl.favorite},
@@ -22,7 +23,8 @@ const ModalLogin: React.FC<styles> = ({active}) => {
 
     return (
         <div>
-            <Login active={activeModal}/>
+            <Login active={activeModal} login={setActiveModal} reg={setActiveRegistration}/>
+            <Registration active={activeRegistration} reg = {setActiveRegistration} login={setActiveModal}/>
             <div className={cl.modal_login} style={{display: active}}>
 
                 <div className={cl.header_modal}>
