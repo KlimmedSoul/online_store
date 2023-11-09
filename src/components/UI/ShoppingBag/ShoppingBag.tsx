@@ -36,7 +36,39 @@ const ShoppingBag: React.FC = () => {
     //     }
     // ]
     // sessionStorage.setItem('favorite', JSON.stringify(arr))
+    // sessionStorage.setItem('bag', JSON.stringify([
+    // sessionStorage.setItem('cart', JSON.stringify([
+    //     {
+    //         name:"Блузка агереса",
+    //         size: "12",
+    //         color: "зеленый",
+    //         pic: "sdfsdf",
+    //         price: 2000,
+    //         count: 3
+    //     }
+    //     ,
+    //     {
+    //         name:"SIMBA",
+    //         size: "12",
+    //         color: "желтый",
+    //         pic: "sdfsdf",
+    //         price: 2000,
+    //         count: 2
+    //     },
+    //     {
+    //         name:"Zimba",
+    //         size: "12",
+    //         color: "красный",
+    //         pic: "sdfsdf",
+    //         price: 2000,
+    //         count: 1
+    //     }
+    // ]))
+
+
     const cart = sessionStorage.getItem('cart')
+
+ 
 
     const products = cart !== null ? JSON.parse(cart) : null
 

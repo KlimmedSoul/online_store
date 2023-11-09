@@ -16,9 +16,9 @@ interface styles {
 const ModalItems: React.FC<styles> = ({setActive, active}) => {
 
     const icons = [
-        {id: 1, component: Cart, text: "Корзина", class:cl.cart},
-        {id: 2, component: Favorite, text: "Избранное", class:cl.favorite},
-        {id: 3, component: Viewed, text: "Просмотренные", class:cl.viewed},
+        {id: 1, component: Cart, text: "Корзина", callback: 'http://localhost:3000/bag'},
+        {id: 2, component: Favorite, text: "Избранное", callback: 'http://localhost:3000/favorite' },
+        {id: 3, component: Viewed, text: "Просмотренные", callback: 'http://localhost:3000/viewed'},
         {id: 4, component: Bonus, text:"Бонусы"},
         {id: 5, component: Person, text:"Личные данные"},
         {id: 6, component: History, text: "История покупок"},
@@ -36,27 +36,27 @@ const ModalItems: React.FC<styles> = ({setActive, active}) => {
             {icons.map(icon => (
                 icon.id === 1 ?
                     <div>
-                        <div className={cl.icon_holder}>
-                            <icon.component className={cl.btn}/>
+                        <div className={cl.icon_holder} onClick={() => window.location.href = icon.callback!}>
+                            <icon.component className={cl.btn} />
                             <p className={cl.icon_text}>{icon.text}</p>
                         </div> 
                         <hr className={cl.hr}/>
                     </div> 
                     : icon.id > 1 && icon.id <= 3 ? 
-                        <div className={cl.icon_holder}> 
+                        <div className={cl.icon_holder} onClick={() => window.location.href = icon.callback!}> 
                             <icon.component className={cl.btn}/>
                             <p className={cl.icon_text}>{icon.text}</p>
                         </div>
                     : icon.id === 4 && localStorage.getItem('auth') === 'true' ? 
                     <div>
                         <hr className={cl.hr}/>
-                        <div className={cl.icon_holder}>
+                        <div className={cl.icon_holder} onClick={() => window.location.href = icon.callback!}>
                             <icon.component className={cl.btn}/>
                             <p className={cl.icon_text}>{icon.text}</p>
                         </div> 
                     </div>
                     : icon.id > 5 && icon.id < 7 && localStorage.getItem('auth') === 'true' ?
-                    <div className={cl.icon_holder}>
+                    <div className={cl.icon_holder} onClick={() => window.location.href = icon.callback!}>
                         <icon.component className={cl.btn}/>
                         <p className={cl.icon_text}>{icon.text}</p>
                     </div>

@@ -44,31 +44,36 @@ const CardProd: React.FC<card> = ({id, price, oldPrice, name, pic, stars, favori
         }
         
         const oldFavorite = items !== null ? JSON.parse(items) : null
-
-        let index = oldFavorite.findIndex((favor:any) => 
-        favor.id === id &&
-        favor.name === name &&
-        favor.pic === pic &&
-        favor.price === price &&
-        favor.stars === stars
-        );
-        
-        console.log(index);
-        
-        if (index !== -1 ) {
-            oldFavorite.splice(index, 1)
-            favoriteIndex.splice(index, 1)
-            setFavorites([...oldFavorite])
-            setFavoriteIndex([...favoriteIndex])
-            sessionStorage.setItem('favorite', JSON.stringify([...oldFavorite]))
-            alert("Удалено с избранных")
+        if(oldFavorite !== null) {
+            let index = oldFavorite.findIndex((favor:any) => 
+            favor.id === id &&
+            favor.name === name &&
+            favor.pic === pic &&
+            favor.price === price &&
+            favor.stars === stars
+            );
+            
+            console.log(index);
+            
+            if (index !== -1 ) {
+                oldFavorite.splice(index, 1)
+                favoriteIndex.splice(index, 1)
+                setFavorites([...oldFavorite])
+                setFavoriteIndex([...favoriteIndex])
+                sessionStorage.setItem('favorite', JSON.stringify([...oldFavorite]))
+                alert("Удалено с избранных")
+            } else {
+                setFavorites([...oldFavorite, card])
+                sessionStorage.setItem('favorite', JSON.stringify([...oldFavorite, card]))
+                setFavoriteIndex([...favoriteIndex, id])
+                alert("Добавлено в избранное")
+            }
         } else {
-            setFavorites([...oldFavorite, card])
-            sessionStorage.setItem('favorite', JSON.stringify([...oldFavorite, card]))
-            setFavoriteIndex([...favoriteIndex, id])
-            alert("Добавлено в избранное")
+            sessionStorage.setItem('favorite', JSON.stringify(card))
+            setFavoriteIndex([id])
+            setFavorites([card])
         }
-        // window.location.reload()
+        window.location.reload()
 
     }
 
@@ -83,6 +88,26 @@ const CardProd: React.FC<card> = ({id, price, oldPrice, name, pic, stars, favori
         }
 
         sessionStorage.setItem('card', JSON.stringify(card))
+
+        const items = sessionStorage.getItem('viewed')
+        if(items !== null) {
+
+            const viewed = items !== null ? JSON.parse(items) : null
+            const index = viewed.findIndex((item:card) => 
+            id === item.id &&
+            price === item.price &&
+            pic === item.pic &&
+            stars === item.stars &&
+            name === item.name &&
+            favorite === item.favorite)
+
+            if (index === -1) {
+                sessionStorage.setItem('viewed', JSON.stringify([...viewed, card]))
+            }
+        } else {
+            sessionStorage.setItem('viewed', JSON.stringify(card))
+        }
+        
         window.location.href = 'http://localhost:3000/product'
     }
 
@@ -90,16 +115,31 @@ const CardProd: React.FC<card> = ({id, price, oldPrice, name, pic, stars, favori
         let flag = false
         const cart = sessionStorage.getItem('cart')
         const products = cart !== null ? JSON.parse(cart) : null
-        let newCart;
-        
-        for(let i = 0; i < products.length; i++) {
-            if(products[i].name === name && products[i].pic === pic && products[i].price === price) {
-                products[i].count += 1
-                flag = true 
-                break;
+        if (products !== null) {
+            for(let i = 0; i < products.length; i++) {
+                if(products[i].name === name && products[i].pic === pic && products[i].price === price) {
+                    products[i].count += 1
+                    flag = true 
+                    break;
+                }
             }
-        }
-        if (flag === false) {
+            if (flag === false) {
+                const cartItem = {
+                    name: name,
+                    size: '36',
+                    color: 'black',
+                    pic: pic,
+                    price: price,
+                    count: 1,
+                    favorite: favorite
+                }
+    
+            sessionStorage.setItem('cart', JSON.stringify([...products, cartItem]))
+            
+            } else {
+                sessionStorage.setItem('cart', JSON.stringify([...products]))
+            }
+        } else {
             const cartItem = {
                 name: name,
                 size: '36',
@@ -109,14 +149,9 @@ const CardProd: React.FC<card> = ({id, price, oldPrice, name, pic, stars, favori
                 count: 1,
                 favorite: favorite
             }
-    
-            newCart = [...products, cartItem]
-            sessionStorage.setItem('cart', JSON.stringify(newCart))
-
-        } else {
-            newCart = [...products]
+            sessionStorage.setItem('cart', JSON.stringify([cartItem]))
         }
-        sessionStorage.setItem('cart', JSON.stringify(newCart))
+        
         alert("Товар добавлен в корзину")
     }
 

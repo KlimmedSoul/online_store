@@ -82,33 +82,7 @@ const ProductItem: React.FC = () => {
         }
     }
 
-    // sessionStorage.setItem('cart', JSON.stringify([
-    //     {
-    //         name:"Блузка агереса",
-    //         size: "12",
-    //         color: "зеленый",
-    //         pic: card.pic,
-    //         price: card.price,
-    //         count: 3
-    //     }
-    //     ,
-    //     {
-    //         name:"SIMBA",
-    //         size: "12",
-    //         color: "желтый",
-    //         pic: card.pic,
-    //         price: card.price,
-    //         count: 2
-    //     },
-    //     {
-    //         name:"Zimba",
-    //         size: "12",
-    //         color: "красный",
-    //         pic: card.pic,
-    //         price: card.price,
-    //         count: 1
-    //     }
-    // ]))
+ 
 
     return (
         <div className={cl.root}>
