@@ -9,3 +9,10 @@
     font-weight: 300;
     line-height: 87.305%; 
 }
+
+.cards_handler {
+    display: flex;
+    margin-left: 7%;
+    overflow: auto;
+    height: 450px;
+}

@@ -4,7 +4,7 @@ import cl from './CatalogButton.module.css'
 
 function CatalogButton() {
     return (
-        <div className={cl.button_handler}>
+        <div className={cl.button_handler} onClick={() => window.location.href = 'http://localhost:3000/catalog'}>
             <div className={cl.btn_div}>
                 <button className={cl.catalog_button}>
                     <div>

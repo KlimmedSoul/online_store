@@ -6,7 +6,7 @@ import RightWelcomeClothes from '../../../img/LandingPage/Right_welcome_clothes.
 function Welcome() {
 
     return (
-        <div className={cl.welcome}>
+        <section className={cl.welcome}>
             <div className={cl.left_part}>
                 <img src={LeftWelcomeClothes} alt="clothes" className={cl.left_img}/>
                 <h1 className={cl.welcome_title}>
@@ -25,7 +25,7 @@ function Welcome() {
                 <img src={RightWelcomeClothes} alt="clothes" className={cl.right_img}/>
             </div>
             
-        </div>
+        </section>
     );
 }
 

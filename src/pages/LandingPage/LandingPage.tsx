@@ -33,7 +33,7 @@ const Landing: React.FC = () => {
             <div className={cl.third_circle}/>
             <div className={cl.fourth_circle}/>
             <BuyNow/>
-            <FeedBack/>
+            <FeedBack title={'Отзывы наших покупателей'}/>
             <BigElipse/>
             <FAQ/>
             <Cooperation/>

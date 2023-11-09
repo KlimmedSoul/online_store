@@ -1,11 +1,9 @@
-.prod_handler {
-    display: flex;
-    justify-content: space-evenly
-}
 
 .prod_card {
-    width: 300px;
-
+    max-width: 300px;
+    min-width: 300px;
+    margin-right: 50px;
+    margin-bottom: 20%;
 }
 
 .icon_handler {
@@ -44,6 +42,7 @@
     margin-left: 10px;
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 .prod_name_handler {
@@ -81,6 +80,7 @@
 
 .button_title {
     padding: 10px;
+    cursor: pointer;
     color: #514A7E;
     font-family: Roboto;
     font-size: 14px;
@@ -99,12 +99,12 @@
 
     .arrow {
         stroke: #FFFDF5;
-        ;
     }
 }
 
 .arrow {
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     stroke: #514A7E;
 
 }

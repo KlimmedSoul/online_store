@@ -47,9 +47,9 @@ const Footer: React.FC = () => {
             text: "Моя информация"
         },
     ]
-
+    
     return (
-        <div className={cl.footer}>
+        <footer className={cl.footer}>
 
             <div className={cl.info_handler}>
                 <h1 className={cl.title}>Информация</h1>
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
                 <img src={Logo} alt='logo' className={cl.logo}/>
             </div>
 
-        </div>
+        </footer>
     );
 }
 

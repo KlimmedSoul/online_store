@@ -21,3 +21,8 @@
     line-height: 87.305%;
 }
 
+.cards_handler {
+    overflow: auto;
+    display: flex;
+    margin-left: 7%;
+}

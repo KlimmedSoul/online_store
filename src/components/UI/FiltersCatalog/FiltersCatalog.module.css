@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.filters_handler {
+    display: flex;
+    margin-top: 3.5%;
+    margin-left: 6%;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.title {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.filter {
+    cursor: pointer;
+    color: #121212;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.filter:hover {
+    font-size: 22px;
+}

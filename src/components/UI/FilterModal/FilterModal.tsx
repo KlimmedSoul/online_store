@@ -12,8 +12,14 @@ const FilterModal: React.FC<props> = ({display}) => {
     const [activeFilter, setActiveFilter] = useState<number | null>(null)
 
 
-    const shutter =  async (some:any) => {
+    const shutter = (some:number|null, filter:string) => {
         setActiveFilter(some)
+        localStorage.setItem('filter', filter)
+    }
+
+    const subFilterHandler = (subFilter: string) => {
+        localStorage.setItem('subFilter', subFilter)
+        window.location.href = 'http://localhost:3000/catalog'
     }
 
     return (
@@ -26,7 +32,7 @@ const FilterModal: React.FC<props> = ({display}) => {
                     {filters.map(filter => (
                         
                         <h1 className={cl.filter} key={filter.id} onClick={
-                            activeFilter === filter.id ? () => shutter(null) : () => shutter(filter.id)}
+                            activeFilter === filter.id ? () => shutter(null, 'none') : () => shutter(filter.id, filter.text)}
                             style={activeFilter === filter.id ? {fontSize: '22px', fontWeight: 400} : {fontSize : '18px', fontWeight: 300} }>
                             {filter.text}
                         </h1>
@@ -36,7 +42,8 @@ const FilterModal: React.FC<props> = ({display}) => {
 
                 <div className={cl.subFilters} style={activeFilter === null ? {display: 'none'} : {display: 'block'}}>
                     {subFilters.map(subFilter => (
-                        <h1 className={cl.subFilter} key={subFilter.id}>{subFilter.text}</h1>
+                        <h1 className={cl.subFilter} key={subFilter.id}
+                        onClick={() => subFilterHandler(subFilter.text)}>{subFilter.text}</h1>
                     ))}
                 </div>
             </div>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.root {
+    margin-left: 6%;
+}
+
+.title_handler {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10%;
+}
+
+.title_input_handler {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_label {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.price_input {
+    cursor: pointer;
+    width: 170px;
+}
+
+.filter_handler {
+    margin-bottom: 12%;
+}
+
+.arrow {
+    cursor: pointer;
+    margin-top: 7%;
+}
+
+.size_handler {
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.checkbox {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 30px;
+    vertical-align: middle;
+    border: 1px solid #7D7D7D;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: gray;
+}
+
+.checkbox_label {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0.5px solid rgb(189, 189, 189);
+}
+
+.color_handler {
+    columns: 30px 2;
+    width: 200px;
+}

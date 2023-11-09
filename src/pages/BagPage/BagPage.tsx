@@ -14,7 +14,7 @@ const Bag: React.FC = () => {
     return (
         <Slide heightValue='100vh'>
             <Header/>
-            <ShoppingBag ggg={products}/> 
+            <ShoppingBag/> 
             <Recommendation/>
             <Footer/>
         </Slide>

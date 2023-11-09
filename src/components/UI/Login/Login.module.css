@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.root {
+    display: none;
+    position: absolute;
+    left: 10%;
+    border: 1px solid black;
+    width: 45%;
+    height: 50%;
+    background-color: #FFFDF5;
+    padding-top: 6%;
+    padding-left: 6%;
+    margin-top: 8%;
+    margin-left: 8%;
+}
+
+.header_handler {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.title_handler {
+    margin-bottom: 4%;
+}
+
+.title {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs_hanlder {
+    height: 50%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    height: 40px;
+    margin-top: 3%;
+    border: 0px;
+    border-bottom: 1px solid #7D7D7D;
+    background-color: #FFFDF5;
+
+    color: #121212;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.input::placeholder {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.forget {
+    cursor: pointer;
+    margin-top: 3%;
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}
+
+.buttons_handler {
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.btn_login,
+.btn_registration {
+    cursor: pointer;
+    border: 1px solid #514A7E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+}
+
+.btn_login_title,
+.btn_registration_title {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn_login_title {
+    color: #FFFDF5;
+}
+
+.btn_login {
+    background-color: #514A7E;;
+}
+
+.btn_login:hover {
+    background-color: #FFFDF5;
+    .btn_login_title {
+        color: #121212;
+    }
+}
+
+.btn_registration:hover {
+    background-color: #514A7E;
+    .btn_registration_title {
+        color: #FFFDF5;
+    }
+}
+

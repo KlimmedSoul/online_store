@@ -1,0 +1,8 @@
+.root {
+    padding-left: 2%;
+    columns: 100px 3;
+    column-gap: 3%;
+    width: 65%;
+    min-height: 10%;
+    max-height: 10%;
+}

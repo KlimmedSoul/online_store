@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.label_button {
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button {
+    cursor: pointer;
+    margin-top: 2%;
+    padding: 1%;
+    border: 0.5px solid #514A7E;
+    box-shadow: 0px 0px 6px gray;
+    background: #514A7E;
+}
+
+.button:hover{
+    background-color: #FFFDF5;
+    .label_button {
+        color: #514A7E;
+    }
+}

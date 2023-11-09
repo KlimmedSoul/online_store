@@ -1,0 +1,18 @@
+.main {
+    margin-top: 5%;
+    display: flex;
+}
+
+.left_menu {
+    margin-left: 7%;
+    width: 12%;
+}
+
+.item_section {
+    padding-left: 2%;
+    columns: 100px 3;
+    column-gap: 3%;
+    width: 65%;
+    min-height: 10%;
+    max-height: 10%;
+}

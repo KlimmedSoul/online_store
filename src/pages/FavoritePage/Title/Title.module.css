@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@300&display=swap');
+
+.title_handler {
+    margin-left: 7%;
+    margin-top: 4%;
+}
+
+.title {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}

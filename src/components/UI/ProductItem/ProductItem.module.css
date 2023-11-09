@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.root {
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+.title {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}
+
+.art {
+    margin-left: 1%;
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.price {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}
+
+.main_section {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.block_title {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8%;
+}
+
+.circle {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0.5px solid gray;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price,
+.color_handler,
+.size_handler,
+.buttons_handler,
+.feedback_handler,
+.discription_handler {
+    margin-bottom: 10%;
+}
+
+.size_box {
+    cursor: pointer;
+    border: 0.5px solid #514A7E;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_handler {
+    margin-left: 10%;
+}
+
+.letter {
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.number {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    width: 150%;
+}
+
+.size_table {
+    max-height: 10%;
+    min-height: 10%;
+    cursor: pointer;
+    margin-top: 15%;
+    color: #514A7E;
+    padding-bottom: 1%;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: white;
+    border: 0px;
+    border-bottom: 0.5px solid #514A7E;
+}
+
+.favorite_icon {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.cart_button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #514A7E;
+    background: #514A7E;
+    color: white;
+    width: 140px;
+    height: 50px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.cart_button:hover {
+    background-color: #FFFDF5;
+
+    .btn_title {
+        color: #514A7E;
+    }
+
+    .bag {
+        color: #514A7E;
+    }
+}
+
+.btn_title {
+    cursor: pointer;
+    margin: 10px;
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons_handler {
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    margin-right: 3%;
+}
+
+.feedbacks {
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+}
+
+.discription {
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 440%;
+}
+
+.pic {
+    height: 600px;
+    width: 550px;
+}
